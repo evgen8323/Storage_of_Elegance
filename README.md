@@ -1,4 +1,4 @@
-# Algorithms-notes
+# Algorithms notes
 
 |Name|Where it from|Descriptioin|
 |-|-|-|
