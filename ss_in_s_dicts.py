@@ -26,7 +26,6 @@ def modify_dict(s_dict, w_dict, sym, m):
         ans = 1
     return ans
     
-    
 len_w, len_s = map(int, f.readline().split())
 w = f.readline().strip()
 s = f.readline().strip()
