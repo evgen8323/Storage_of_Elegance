@@ -34,7 +34,7 @@ w_dict = make_dict(w)
 s_dict = make_dict(s[:len_w])
 matching_letters = match_dicts(w_dict, s_dict)
 occurrences = 0
-if matching_letters == len_w:
+if matching_letters == len(w_dict):
     occurrences += 1
 for i in range(len_w, len_s):
     matching_letters += modify_dict(s_dict, w_dict, s[i - len_w], -1)
