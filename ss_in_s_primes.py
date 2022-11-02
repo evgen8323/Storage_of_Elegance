@@ -1,5 +1,4 @@
-f = open('/media/oem/MyData/in.txt', 'r')
-# f = open('input.txt', 'r')
+f = open('input.txt', 'r')
 
 len_ss, len_s = map(int, f.readline().split())
 ss = f.readline()
