@@ -1,11 +1,12 @@
-def generate(cur, open, closed, n):
+def generate(ans, cur, open, closed, n):
     if len(cur) == 2 * n:
-        print(cur)
-        return
+        ans.append(cur)
     if open < n:
-        generate(cur + '(', open + 1, closed, n)
+        generate(ans, cur + '(', open+1, closed, n)
     if closed < open:
-        generate(cur+')', open, closed + 1, n)
-    
+        generate(ans, cur + ')', open, closed+1, n)
+
 def parens(n):
-    generate('', 0, 0, n)
+    ans = []
+    generate(ans, '', 0, 0, n)
+    return ans
